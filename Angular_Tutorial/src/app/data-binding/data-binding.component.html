@@ -1,0 +1,68 @@
+<p>data-binding works!</p>
+
+<div class="row">
+    <div class="col-3">
+        <p>one way data binding - .ts to .html</p>
+    </div>
+    <div class="col-3">
+
+    </div>
+    <div class="col-3">
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        {{title}}
+    </div>
+    <div class="col-3">
+        {{inputType}}
+        <input type="text" value="{{inputType}}" name="" id="">
+        <input type="{{inputType}}" name="" id="">
+    </div>
+    <div class="col-3">
+        {{rollNo}}
+    </div>
+    <div class="col-3">
+        {{isIndian}}
+    </div>
+    <div class="col-3">
+        {{todayDate}}
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-3">
+       <!--  interpolation using this {{}}  -->
+
+        <div class="{{myClassName}}">
+            <p>heloo bg</p>
+        </div>
+    </div>
+    <div class="col-3">
+
+        <!-- This is Property Binding  using this  [] -->
+        <div [class]="classesName">
+            Hello property Binding
+        </div>
+    </div>
+    <div class="col-3">
+
+    </div>
+</div>
+
+
+<h1>Event Binding</h1>
+<div class="row">
+    <div class="col-3">
+       <button class="btn btn-success" (click)="showMessage('Welcome to Angular 18')"> show message</button>
+    </div>
+    <div class="col-3">
+
+    </div>
+    <div class="col-3">
+
+    </div>
+</div>

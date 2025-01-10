@@ -1,0 +1,32 @@
+<p>data-binding1 works!</p>
+
+<h1>Data Binding in Angular 18</h1>
+
+<h3>InterPolation - one way data binding</h3>
+<h2>.ts file to .html fileSS</h2>
+
+<p>{{title}}</p>
+<p>{{inputType}}</p>
+<p>engineer: {{isEngineer}}</p>
+<p>today date id : {{currentDate}}</p>
+<p>currentTime: {{currentTime}}</p>
+
+<div class="{{classesName}}">
+    <input type="text" value="{{title}}">
+    <br>
+    <input type="{{inputType}}" name="" value="{{title}}" id="">
+    
+    <div>
+        <button class="{{myClassName}}" (click)="showMessage('This is my messageS')">show my messageS</button>
+    </div>
+</div>
+
+<h1>{{title}}</h1>
+<button type="button" (click)="showAlert('Nehal',9318396560)">show Alert</button>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem culpa laudantium dignissimos veritatis? Nulla error autem, unde quod, quidem ipsam praesentium aspernatur quam rem totam corrupti ex pariatur in quos</p>
+
+
+<button type="button" (click)="changTitle()">change title</button>
+
+
+<h1>Two Way data Binding using Ng Model</h1>
